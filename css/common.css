@@ -1,0 +1,26 @@
+@charset "UFT-8";
+
+
+body, textarea, input {font-family: 'SUIT-Regular','Pretendard-Regular', '나눔고딕', '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic eo', '돋움', 'Dotum', 'sans-serif';}
+
+body {
+  --title1:80px;
+  --title2:42px;
+  --title3:40px;
+  --title4:35px;
+  --title5:32px;
+  --title6:25px;
+  --nav:20px;
+  --link:23px;
+  --foot:18px;
+
+  --colorTit1:#ffbeb0;
+  --colorTit2:#fef9e3;
+  --colorTit3:#b86900;
+  --colornav:#fff9f0;
+
+
+
+
+}
+

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포터리반 쇼핑몰</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="centerbox">
+            <div class="log_box">
+                <!-- 로그인전 -->
+                <div class="login">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">장바구니<span class="basket_ea">99</span></a>
+                    <a href="#">매장안내</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <!-- 로그인전 끝 -->
+
+                <!-- 로그인후 -->
+                <div class="logout">
+                    <a href="#">로그아웃</a>
+                    <a href="#">정보수정</a>
+                </div>
+                <!-- 로그인후 끝 -->
+            </div>
+
+            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+
+            <div class="search_box">
+                <input type="text">
+                <button><i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="gnb_box">
+            <nav>
+                <ul class="gnb">
+                    <li><a href="sub.html">가구</a>
+                        <ul class="lnb">
+                            <li><a href="#">소파/체어</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">가죽소파</a></li>
+                                    <li><a href="#">패브릭소파</a></li>
+                                    <li><a href="#">1인 체어</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">거실 소가구</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">거실장/콘솔</a></li>
+                                    <li><a href="#">거실테이블</a></li>
+                                    <li><a href="#">사이드테이블</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">주방가구</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">식탁</a></li>
+                                    <li><a href="#">식탁의자</a></li>
+                                    <li><a href="#">벤치</a></li>
+                                    <li><a href="#">바 스툴</a></li>
+                                    <li><a href="#">바 카트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">침실가구</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">침대</a></li>
+                                    <li><a href="#">협탁</a></li>
+                                    <li><a href="#">서랍장</a></li>
+                                    <li><a href="#">매트리스</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">서재가구</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">책상</a></li>
+                                    <li><a href="#">책장</a></li>
+                                    <li><a href="#">의자</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">쿠션/러그</a>
+                        <ul class="lnb">
+                            <li><a href="#">쿠션커버</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">40X66cm</a></li>
+                                    <li><a href="#">50X50cm</a></li>
+                                    <li><a href="#">50X50cm</a></li>
+                                    <li><a href="#">60X60cm</a></li>
+                                    <li><a href="#">쉐입쿠션</a></li>
+                                    <li><a href="#">기타 사이즈</a></li>
+                                    <li><a href="#">쿠션솜</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">러그</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">천연소재</a></li>
+                                    <li><a href="#">합성소재</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">침구</a>
+                        <ul class="lnb">
+                            <li><a href="#">침구류</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">차렵/퀼트</a></li>
+                                    <li><a href="#">이불커버</a></li>
+                                    <li><a href="#">베개커버</a></li>
+                                    <li><a href="#">매트리스커버</a></li>
+                                    <li><a href="#">이불/베개솜</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">블랭킷/담요</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">쓰로우</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">시계/액자</a>
+                        <ul class="lnb">
+                            <li><a href="#">인테리어 시계</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">데스크탑 시계</a></li>
+                                    <li><a href="#">벽시계</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">액자</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">프레임</a></li>
+                                    <li><a href="#">프레임세트</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">테이블웨어</a>
+                        <ul class="lnb">
+                            <li><a href="#">디너웨어</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">디너웨어</a></li>
+                                    <li><a href="#">서브웨어</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">테이블 리넨</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">테이블 매트</a></li>
+                                    <li><a href="#">테이블 러너</a></li>
+                                    <li><a href="#">테이블 쓰로우</a></li>
+                                    <li><a href="#">냅킨/링</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">커트러리</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">포크/나이프/스푼</a></li>
+                                    <li><a href="#">서브웨어</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">드링크웨어</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">머그</a></li>
+                                    <li><a href="#">글라스웨어</a></li>
+                                    <li><a href="#">아웃도어</a></li>
+                                    <li><a href="#">드링크 디스펜서</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">엔터테이닝</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">플레이팅 악세서리</a></li>
+                                    <li><a href="#">바 악세서리</a></li>
+                                    <li><a href="#">와인 악세서리</a></li>
+                                    <li><a href="#">코스터</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">욕실</a>
+                        <ul class="lnb">
+                            <li><a href="#">타올/매트</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">타올</a></li>
+                                    <li><a href="#">욕실매트</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">역실 악세서리</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">악세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">목욕가운</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">가운</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">화병/조화</a>
+                        <ul class="lnb">
+                            <li><a href="#">화병/베이스</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">세라믹</a></li>
+                                    <li><a href="#">글라스</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">조화</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">꽃/브랜치</a></li>
+                                    <li><a href="#">화분</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">데코 오브젝트</a>
+                                <ul class="lnb_sub">
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">데코/수납</a>
+                        <ul class="lnb">
+                            <li><a href="#">랜턴/캔들/촛대</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">랜턴</a></li>
+                                    <li><a href="#">촛대</a></li>
+                                    <li><a href="#">보티브</a></li>
+                                    <li><a href="#">악세서리</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">수납용품</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">바스켓/수납박스</a></li>
+                                    <li><a href="#">쥬얼리박스</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">데코소품</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">데코 악세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">홈 오피스</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">홈 오피스 악세서리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">벽데코</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">선반/행거</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">조명/거울</a>
+                        <ul class="lnb">
+                            <li><a href="#">조명</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">테이블 램프</a></li>
+                                    <li><a href="#">플로어 램프</a></li>
+                                    <li><a href="#">펜던트/샹들리에</a></li>
+                                    <li><a href="#">램프 셰이드</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">거울</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">플로어미러</a></li>
+                                    <li><a href="#">벽걸이/탁상형</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">시즌상품</a>
+                        <ul class="lnb">
+                            <li><a href="#">봄맞이 패브릭</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">쿠션</a></li>
+                                    <li><a href="#">러그</a></li>
+                                    <li><a href="#">침구</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">테이블 위 봄바람</a>
+                                <ul class="lnb_sub">
+                                    <li><a href="#">글라스웨어</a></li>
+                                    <li><a href="#">식기</a></li>
+                                    <li><a href="#">테이블 리넨</a></li>
+                                    <li><a href="#">테이블데코</a></li>
+                                    <li><a href="#">식탁/의자</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">클리어런스</a></li>
+                    <li><a href="#">기획전</a></li>                    
+                </ul>
+                <!-- <div class="gnb_box"></div> -->
+            </nav>
+        </div>
+    </header>
+
+    <div id="visual">
+        <div class="text_box">
+            <img src="images/slide_text.png" alt="">
+        </div>
+        <div class="prod_box">
+            <ul>
+                <li class="on">
+                    <a href="#">
+                        <img src="images/product1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/product2.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/product3.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/product4.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="section_box">
+        <section id="section1">
+            <div class="centerbox">
+                <h2 data-300="opcity:0; margin-top:100px"
+                    data-500="opcity:1; margin-top:0px"
+                >
+                    <span>Best</span> Item
+                    <img src="images/arrow.png" alt="">                  
+                </h2>
+
+                <ul class="cont">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img1.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img2.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img3.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img1.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img2.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img3.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="centerbox">
+                <h2>
+                    Sale Item
+                    <img src="images/arrow_white.png" alt="">                  
+                </h2>
+                <ul class="cont"
+                data-1400="margin-left:-1000px;"
+                data-1700="margin-left:0px;">
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/sec2-img0.png" alt=""></figure>
+                        </a>
+                        <div class="cont_ex">
+                            <span class="sale">60% sale</span>
+                            <div class="title">샤토 우드 레이지 수잔
+                                <p>(다크 브라운)</p>
+                            </div>
+                            <div class="price"><span> 180,000원</span>72,000원</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/sec2-img1.png" alt=""></figure>
+                        </a>
+                        <div class="cont_ex">
+                            <span class="sale">60% sale</span>
+                            <div class="title">샤토 우드 레이지 수잔
+                                <p>(다크 브라운)</p>
+                            </div>
+                            <div class="price"><span> 180,000원</span>72,000원</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/sec2-img2.png" alt=""></figure>
+                        </a>
+                        <div class="cont_ex">
+                            <span class="sale">60% sale</span>
+                            <div class="title">샤토 우드 레이지 수잔
+                                <p>(다크 브라운)</p>
+                            </div>
+                            <div class="price"><span> 180,000원</span>72,000원</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure><img src="images/sec2-img3.png" alt=""></figure>
+                        </a>
+                        <div class="cont_ex">
+                            <span class="sale">60% sale</span>
+                            <div class="title">샤토 우드 레이지 수잔
+                                <p>(다크 브라운)</p>
+                            </div>
+                            <div class="price"><span> 180,000원</span>72,000원</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="centerbox">
+                <h2>
+                    New Item
+                    <img src="images/arrow.png" alt="">                  
+                </h2>
+
+                <ul class="cont">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec3-img0.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="cont_ex">
+                                <div class="title">
+                                    클라라 침대_Q(스카이 화이트)
+                                </div>
+                                <div class="price">1,824,000<span>원</span></div>
+                                <span class="best">best</span>
+                                <span class="new">new</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♥</span>
+                                <!-- <span class="no_favorite">♡</span> -->
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="new">new</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♥</span>
+                                <!-- <span class="no_favorite">♡</span> -->
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="new">new</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♥</span>
+                                <!-- <span class="no_favorite">♡</span> -->
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="new">new</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♥</span>
+                                <!-- <span class="no_favorite">♡</span> -->
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="new">new</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div class="centerbox">
+                <h2>
+                    General Item
+                    <img src="images/arrow.png" alt=""> 
+                </h2>
+
+                <ul class="cont">
+                    <li data-3350="border-radius:100px"
+                        data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                        data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img1.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                    data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img2.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                    data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img3.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                    data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img0.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                    data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img1.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                    data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img2.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                    <li data-3350="border-radius:100px"
+                    data-3500="border-radius:0">
+                        <a href="#">
+                            <figure>
+                                <img src="images/sec1-img3.png" alt="">
+                                <span class="favorite">♡</span>
+                            </figure>
+                            <div class="title">
+                                클라라 침대_Q(스카이 화이트)
+                            </div>
+                            <div class="price">1,824,000<span>원</span></div>
+                            <span class="best">best</span>
+                            <span class="sale">sale</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- <div class="cont_box">
+                    <figure><img src="images/sec4-img.png" alt=""></figure>
+                    <ul class="cont">
+                        <li data-3350="border-radius:100px"
+                            data-3500="border-radius:0">
+                        <a href="#"><img src="images/sec4-img1.png" alt=""></a>
+                        </li>
+                        <li data-3350="border-radius:100px"
+                        data-3500="border-radius:0"><a href="#"><img src="images/sec4-img2.png" alt=""></a></li>
+                        <li data-3350="border-radius:100px"
+                        data-3500="border-radius:0"><a href="#"><img src="images/sec4-img3.png" alt=""></a></li>
+                        <li data-3350="border-radius:100px;"
+                        data-3500="border-radius:0;"><a href="#"><img src="images/sec4-img4.png" alt=""></a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="section5">
+            <div class="centerbox">
+                <div class="cont">
+                    <a href="#">
+                        <div class="event_text">
+                            Clearance Up to 70%
+                            <span>바로가기</span>
+                        </div>                    
+                    </a>                
+                    <a href="#">
+                        <div class="event_text">
+                            Spring Festival Up to 30%
+                            <span>바로가기</span>
+                        </div>                    
+                    </a> 
+                </div>               
+            </div>
+            <div class="bg">
+                <img src="images/sec5-img1.png" alt="">
+                <img src="images/sec5-img2.png" alt="">
+            </div>
+        </section>
+
+        <section id="section6">
+            <div class="centerbox swiper mySwiper">
+                <ul class="cont swiper-wrapper">
+                    <li class="swiper-slide"
+                        data-4400="opacity:1;"
+                        data-4450="opacity:0;"
+                        data-4500="opacity:1;">
+                        <a href="#"><span>브랜드 소개</span><img src="images/sec6-img0.png" alt=""></a>
+                    </li>
+                    <li class="swiper-slide"
+                        data-4400="opacity:1;"
+                        data-4450="opacity:0;"
+                        data-4500="opacity:1;">
+                        <a href="#"><span>매장안내</span><img src="images/sec6-img1.png" alt=""></a>
+                    </li>
+                    <li class="swiper-slide"
+                        data-4400="opacity:1;"
+                        data-4450="opacity:0;"
+                        data-4500="opacity:1;">
+                        <a href="#"><span>인재채용</span><img src="images/sec6-img2.png" alt=""></a>
+                    </li>
+                    <li class="swiper-slide"
+                        data-4400="opacity:1;"
+                        data-4450="opacity:0;"
+                        data-4500="opacity:1;">
+                        <a href="#"><span>멤버십 안내</span><img src="images/sec6-img3.png" alt=""></a>
+                    </li>
+                    <li class="swiper-slide"
+                        data-4400="opacity:1;"
+                        data-4450="opacity:0;"
+                        data-4500="opacity:1;">
+                        <a href="#"><span>침대 스타일링 모아보기</span><img src="images/sec6-img4.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <div class="prod_today">
+        <h2>최근 본 상품</h2>
+        <ul>
+            <li><a href="#"><img src="images/product1.png" alt=""></a></li>
+            <li><a href="#"><img src="images/product2.png" alt=""></a></li>
+            <li><a href="#"><img src="images/product3.png" alt=""></a></li>
+            <li><a href="#"><img src="images/product4.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="centerbox">
+
+        </div>
+    </footer>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/action.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 17,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
+
+    <script src="script/skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+</body>
+</html>
