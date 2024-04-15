@@ -410,6 +410,9 @@ header .gnb_box nav .gnb > li .lnb > li .lnb_sub li a {
   font-size: 20px;
   color: #494949;
   margin-top: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #section3 .cont li .price {
   font-size: 23px;
@@ -651,6 +654,8 @@ header .gnb_box nav .gnb > li .lnb > li .lnb_sub li a {
   overflow: hidden;
 }
 .prod_today ul li a img {width: 100%; height: 100%; object-fit: cover;}
+.prod_today ul li:last-child {width: 50px; height: 50px; background: #67653d;text-align: center; margin: 0 auto; border-radius: 50%;}
+.prod_today ul li:last-child a {color: #fff; line-height: 50px;}
 
 #visual_sub {
   height: 436px;
